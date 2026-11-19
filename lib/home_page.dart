@@ -125,7 +125,7 @@ class MyHomePage extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Day #${data.fbDayNo}',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   ),
                 ),
               ),
