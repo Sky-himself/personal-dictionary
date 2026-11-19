@@ -106,7 +106,7 @@ class _WordCardState extends State<WordCard> {
                         word.type == WType.word
                             ? 'Word ${widget.index + 1}'
                             : 'Phrase ${widget.index + 1}',
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headlineSmall,
                       ),
                       Text('Level ${word.level}'),
                     ],
@@ -147,7 +147,7 @@ class _WordCardState extends State<WordCard> {
                   label: const Text('See Translation'),
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(double.infinity, 50),
-                    primary: setButtonColor(),
+                    backgroundColor: setButtonColor(),
                   ),
                 ),
               if (_showTranslation || word.type == WType.phrase)
@@ -170,7 +170,7 @@ class _WordCardState extends State<WordCard> {
                         label: const Text('Wrong'),
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(double.infinity, 50),
-                          primary: Colors.red[600],
+                          backgroundColor: Colors.red[600],
                         ),
                       ),
                     ),
@@ -192,7 +192,7 @@ class _WordCardState extends State<WordCard> {
                         label: const Text('Correct'),
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(double.infinity, 50),
-                          primary: Colors.green[600],
+                          backgroundColor: Colors.green[600],
                         ),
                       ),
                     ),

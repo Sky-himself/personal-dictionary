@@ -14,3 +14,10 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Dependency updates
+
+Use `flutter pub get` to install the versions recorded in `pubspec.lock`.
+The `archive` constraint keeps the resolver on releases with the fixes
+for CVE-2023-39139 and CVE-2023-39137. Keep the version floor when updating
+the packages that use it and review the lockfile before committing changes.
